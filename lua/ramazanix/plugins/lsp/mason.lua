@@ -18,28 +18,9 @@ return {
 				},
 			},
 		})
-		mason.setup({
-			ui = {
-				icons = {
-					package_installed = "✔",
-					package_pending = "⍨",
-					package_uninstalled = "✘",
-				},
-			},
-		})
 
 		mason_lspconfig.setup({
-			ensure_installed = {
-				"ts_ls",
-				"html",
-				"cssls",
-				"tailwindcss",
-				"lua_ls",
-				"prismals",
-				"pyright",
-			},
-		})
-		mason_lspconfig.setup({
+			automatic_installation = false,
 			ensure_installed = {
 				"ts_ls",
 				"html",
